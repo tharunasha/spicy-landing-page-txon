@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient( rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./img/backgrond.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav .logo{
+   margin-top:20px ;
+    width: 150px;
+    cursor: pointer;
+}
+.container nav ul li{
+    display: inline-block;
+margin-right: 40px;
+}
+.container nav ul li:last-child{
+    margin-right: 0;
+}
+.container nav ul li a{
+     list-style: none;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+}
+.container nav ul li a:hover{
+    color: #e7434b;
+}
+
+.container nav ul li a span {
+    padding: 15px 30px;
+    background-color: #ea1923;
+    font-size: 20px;
+    border-radius: 35px;
+    transition: 0.4s;
+}
+
+.container nav ul li a span:hover{
+    background-color: #fff;
+    color: #ea1923;
+ }
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.content .title h1 {
+    color: rgba(255,255,255,0.2);
+    background: url(./img/fire.jpg) repeat-x;
+    -webkit-background-clip: text;
+    background-size: contain;
+    animation: fire 15s linear infinite;
+}
+
+@keyframes fire {
+    0%{
+        background-position: left 0 top 25px;
+    }
+    50%{
+        background-position: left 130px top -35px;
+    } 
+    100%{
+        background-position: left 235 top 0;
+    }
+}
+ .container .title img{
+    width: 80px;
+    transform: rotate(20deg);
+ }
+ .container .text {
+    text-align: center;
+ }
+ .container .text h4{
+    color: #c1c1c1;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+ }
+ .container .text .btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    background-color: #ea1923;
+    font-size: 20px;
+    border-radius: 35px;
+    transition: 0.4s;
+ }
+ .container .text .btn:hover{
+    background-color: #fff;
+    color: #ea1923;
+ }
